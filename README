@@ -2,6 +2,8 @@ Basic NVIDIA GPU support modification of the original applet.
 Tested on Ubuntu 16.04
 
 to compile and install:
+Enable source URIs in software and updates: 
+https://askubuntu.com/questions/496549/error-you-must-put-some-source-uris-in-your-sources-list
 sudo apt-get build-dep indicator-multiload
 ./autogen.sh && make -j 8
 sudo make install
