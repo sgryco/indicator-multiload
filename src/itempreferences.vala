@@ -159,7 +159,7 @@ public class ItemPreferences : Object {
             return;
 
         var path = this.itemstore.get_path(iter);
-        this.itemstore.remove(iter);
+        this.itemstore.remove(ref iter);
         if (!this.itemstore.get_iter(out iter, path))
             path.prev();
         this.itemselection.select_path(path);
